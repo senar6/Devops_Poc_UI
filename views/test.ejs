@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test</title>
+	</head>
+	<body>
+        <h1><%= errorMessage %></h1>
+    <h2>Loop</h2>
+<%= workorders[0].area %>
+
+<ul>
+
+    <% workorders.forEach(function(wo) { %>
+        <li><%= wo.woorderno %> - <%= wo.woarea %></li>
+    <% }); %>
+</ul>
+        
+</body>
+</html>

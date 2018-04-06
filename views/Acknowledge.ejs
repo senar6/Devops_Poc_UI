@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DevOps_POC</title>
+    <link rel="Stylesheet" href="/static/css/Site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="/static/scripts/Acknowledge.js"></script>
+    
+</head>
+<body>
+    <div class="container wo_container" style="width:100%" ng-app="Acknowledge" ng-controller="ackCtrl">
+        <div class="row align-center" style="color:green">
+            <h2>AGP ESI Self Tailboard</h2>
+        </div>
+
+        <div class="row align-center" style="padding:2%">
+            <p>Review this list, consider each item and take the necessary<br/>
+            actions to ensure you are ready to perform grid patrols</p>
+        </div>
+
+        <div class="row" style="padding:3%;">
+
+            <div class="col-md-4 col-md-offset-2">
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Perform circle of safety.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Check the vehicle has adequate fuel.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Check beacon and light bar works.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Obey all traffic laws and avoid driving distractions.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Be prepared for different situations (e.g. speed limits, school zones, etc.).
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Check your grids to be patrolled and be aware of any potential driving obstacles.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Identify hazards and understand the risks.
+                    </div>
+                </div>
+            </div>
+
+
+            <!--<div class="col-md-1" style="text-align:right">
+                <span class="glyphicon glyphicon-ok"></span> 
+            </div>-->
+            <div class="col-md-4">
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Consider notifying your supervisor or another ESI of your work location for the day.
+                    </div>
+                    
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        When working in an isolated area or without cell phone coverage provide your supervisor with the FIM and any points of reference as available.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Check to see if you have cellular service or another way to communicate out.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Make sure you have adequate water.
+                    </div>
+                </div>
+                <div class="row ack-row">
+                    <div class="col-md-1">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </div>
+                    <div class="col-md-11">
+                        Be familiar with the whether forecast of the day.
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row align-center" style="padding:3%">
+            <div class="col-md-8 col-md-offset-2">
+                <input type="hidden" id="user" name="user" value="<%= user %>" />
+                <button class="btn btn-success" id="btnAcknowledge" ng-click="sendACK()">I acknowledge that I've read the tailboard list</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

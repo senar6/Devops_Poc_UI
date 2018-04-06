@@ -1,0 +1,137 @@
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+body {
+    background:#333;
+}
+
+.form_bg {
+    background-color:#eee;
+    color:#666;
+    padding:2%;
+    border-radius:50px;
+    border:1px solid #fff;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    margin-top:-3%
+}
+
+.row{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.big{
+    font-family:'Exo', sans-serif;
+}
+
+.align-center {
+    
+    text-align:center !important;
+}
+
+
+.wo_container{
+    background-color: #F5F5F5;
+}
+
+.row-1{
+    text-align:center;
+    background-color:grey;
+    color:white;
+}
+
+.agp_wo{
+    font-size:x-large;
+    font-weight:500;
+    padding:2%;
+    text-align:center;
+    margin-top:3%;
+    background-color:#edc62a;
+}
+
+.wopa{
+    padding-top:2%;
+    font-size:large;
+    font-weight:500;
+}
+
+.district_wo{
+    padding:2%;
+    background-color:#d2d5db;
+}
+
+.select_wo{
+    padding:2%;
+    background-color:#006750;
+    color:white;
+}
+
+.big-title{
+    font-size:60px;
+    font-weight:900;
+}
+
+.material-icons{
+    padding-right:3%;
+}
+
+.wo_container{
+    border :solid;
+}
+
+.glyphicon-ok{
+    color:green !important;
+}
+
+.ack-row{
+    padding:2%;
+}
+
+.btn-success{
+    background-color:#006750;
+}
+
+.buttonlink{
+	display:block;
+	width:9em;
+	height:2em;
+	text-align:center;
+	text-decoration:none;
+	font-weight:900;
+}
+.buttonlink:hover{
+	border-color: #666 #aaa #bbb #888;
+	border-width:4px 3px 3px 4px;
+	color:#fff;
+	cursor: pointer;
+}

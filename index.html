@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    <title>DevOps_POC</title>
+    
+    <link rel="Stylesheet" href="/static/css/Site.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="/static/scripts/Login.js"></script>
+</head>
+<body>
+    <div class="container" style="width:100%" ng-app="Login" ng-controller="loginCtrl">
+        <div class="jumbotron" style="text-align:center;padding:2%;background-color:#138e84;color:white">
+            <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            DevOps POC demo 19/03/2018
+            </h1>
+        </div>
+        <div class="row">
+            <div class="form_bg">
+                <form class="col-md-12 align-center">
+                    <div class="col-md-12 align-center">
+                        <img src="/static/images/login.png" style="width:70%;height:70%" alt="Login" />
+                        <br />
+                        <br />
+
+                        <div class="col-md-12 align-center" id="validateUserPswd" style="color:red;display:none">*Invalid Username/Password</div>
+                        <div class="input-group col-md-10 col-md-offset-1">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="username" type="text" class="form-control" name="username" placeholder="UserName" />
+                        </div>
+                        <div class="row" style="padding:2%"></div>
+                        <div class="input-group col-md-10 col-md-offset-1">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Password" />
+                        </div>
+                        <br />
+                        <div class="align-center">
+                            <button type="submit" class="btn btn-primary" id="btnLogin" ng-click="btnLoginclick()">Login</button>
+                        </div>
+                        <div class="align-center hcf-div-imp" style="display:none">
+                            <p style="color:red">Microservice not Implemented</P>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <form action="/workorder" id="WOform" method="post" style="display:none">
+            <input type="hidden" id="jsonWO" name="jsonWO"/>
+        </form>
+    </div>
+    
+</body>
+</html>
