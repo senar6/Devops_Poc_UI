@@ -2,7 +2,7 @@ var app = angular.module('Acknowledge', []);
 
 app.controller('ackCtrl', function ($scope, $http, $filter) {
     $scope.sendACK = function () {
-        var url = "http://172.25.74.113:8080/SpringMVCHibernate/acknowledge"
+        var url = "http://172.25.74.116:8080/SpringMVCHibernate/acknowledge"
         var param = {};
         param.user = $('#user').val();
         param.datetime = $filter('date')(new Date(), 'MM/dd/yyyy');
